@@ -8,9 +8,7 @@ import blogRoutes from "./routes/blogRoutes.js";
 import calendarRoutes from "./routes/calendarRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 
-app.get("/", (req, res) => {
-    res.send("API is running...");
-});
+
 
 
 dotenv.config();
@@ -39,3 +37,7 @@ mongoose
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
   })
   .catch((error) => console.error("MongoDB connection error:", error));
+
+  app.get("/", (req, res) => {
+    res.send("API is running...");
+});
