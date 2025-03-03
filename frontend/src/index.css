@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgimg {
+    background-image: url('../src/assets/bg-img4.avif');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+.unplanimg {
+    background-image: url('../src/assets/bg-img-5.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.healthyimg {
+    background-image: url('../src/assets/HealthyPreg1.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.get-preg {
+    background-image: url('../src/assets/getting-preg-img.webp');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
