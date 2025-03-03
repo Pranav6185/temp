@@ -25,7 +25,7 @@ export default function Calendar() {
     // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("https://temp-backend-chi.vercel/api/calendar", formData)
+        axios.post("https://temp-backend-chi.vercel.app/api/calendar", formData)
             .then(res => {
                 setEntries([...entries, res.data]);
                 setFormData({ date: "", type: "appointment", description: "", notes: "" });
@@ -35,7 +35,7 @@ export default function Calendar() {
 
     // Handle delete
     const handleDelete = (id) => {
-        axios.delete(`https://temp-backend-chi.vercel/api/calendar/${id}`)
+        axios.delete(`https://temp-backend-chi.vercel.app/api/calendar/${id}`)
             .then(() => setEntries(entries.filter(entry => entry._id !== id)))
             .catch(err => console.error(err));
     };
