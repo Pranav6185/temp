@@ -10,7 +10,7 @@ const Home = () => {
 
     const fetchResources = async () => {
         try {
-            const response = await fetch("http://localhost:3000/api/resources");
+            const response = await fetch("https://temp-backend-chi.vercel.app/api/resources");
             const data = await response.json();
             setResources(data);
         } catch (error) {

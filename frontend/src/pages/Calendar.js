@@ -12,7 +12,7 @@ export default function Calendar() {
 
     // Fetch calendar entries from backend
     useEffect(() => {
-        axios.get("http://localhost:5000/api/calendar")
+        axios.get("https://temp-backend-chi.vercel.app/api/calendar")
             .then(res => setEntries(res.data))
             .catch(err => console.error(err));
     }, []);

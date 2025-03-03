@@ -11,7 +11,7 @@ const PregnancyQuestionsCenter = () => {
 
     const fetchBlogs = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/blogs");
+            const response = await axios.get("https://temp-backend-chi.vercel.app/api/blogs");
             setBlogs(response.data);
         } catch (error) {
             console.error("Error fetching blogs:", error);
@@ -21,7 +21,7 @@ const PregnancyQuestionsCenter = () => {
     const addBlog = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/api/blogs", newBlog, {
+            const response = await axios.post("https://temp-backend-chi.vercel.app/api/blogs", newBlog, {
                 headers: { "Content-Type": "application/json" }
             });
             console.log("Blog added:", response.data);

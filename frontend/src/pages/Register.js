@@ -11,7 +11,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/register", { name, email, password });
+            const response = await axios.post("https://temp-backend-chi.vercel.app/api/auth/register", { name, email, password });
             alert(response.data.message);  // Show success message
             navigate("/login");
         } catch (error) {

@@ -64,7 +64,7 @@ const HomePage = () => {
             {/* Hero Section */}
             <div className="bg-gray-100 bg-opacity-50 bgimg h-[500px]">
                 <div className="container mx-auto px-4 py-8 text-center pt-28 ">
-                    <h2 className="text-4xl font-semibold text-blue-800 mb-2 text-5xl pb-5">PREGNANT ?</h2>
+                    <h2 className=" font-semibold text-blue-800 mb-2 text-5xl pb-5">PREGNANT ?</h2>
                     <h3 className="text-2xl text-pink-500 mb-6 font-bold pb-4">WE'RE HERE FOR YOU.</h3>
                     <p className="text-gray-600 mb-4 max-w-2xl mx-auto pb-2">
                         Pregnancy comes with so many questions. We've captured dozens of the top questions to create the Pregnancy Questions Center. Come see what so many people are asking!
