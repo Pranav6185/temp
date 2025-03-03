@@ -8,6 +8,11 @@ import blogRoutes from "./routes/blogRoutes.js";
 import calendarRoutes from "./routes/calendarRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 
+app.get("/", (req, res) => {
+    res.send("API is running...");
+});
+
+
 dotenv.config();
 const app = express();
 
